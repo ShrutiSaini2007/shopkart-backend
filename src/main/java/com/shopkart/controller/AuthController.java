@@ -35,8 +35,9 @@ public class AuthController {
         return ResponseEntity.ok(new AuthResponse(token, user.getEmail(), user.getRole().name()));
     }
 
-    @PostMapping("/login")
-    public ResponseEntity<?> login(@RequestBody LoginRequest req) {
+   @PostMapping("/login")
+public ResponseEntity<?> login(@RequestBody LoginRequest req) {
+    System.out.println("LOGIN ENDPOINT REACHED: " + req.getEmail());
         User user = userRepository.findByEmail(req.getEmail())
                 .orElse(null);
 
