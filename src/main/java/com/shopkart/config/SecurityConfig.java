@@ -62,7 +62,7 @@ public class SecurityConfig {
         configuration.setAllowedOrigins(List.of(
             "http://localhost:5173",
             "http://localhost:3000",
-            "https://shopkart-frontend-nu.vercel.app"
+           "https://shopkart-frontend-4vvekn1fi-shruti13.vercel.app"
             // add your deployed frontend URL here, e.g. "https://shopkart-frontend.onrender.com"
         ));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
