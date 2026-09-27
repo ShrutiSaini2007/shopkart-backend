@@ -37,7 +37,7 @@ public class AuthController {
 
    @PostMapping("/login")
 public ResponseEntity<?> login(@RequestBody LoginRequest req) {
-    System.out.println("LOGIN ENDPOINT REACHED: " + req.getEmail());
+   
         User user = userRepository.findByEmail(req.getEmail())
                 .orElse(null);
 
